@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA737321F1DBCFB00BC06EA /* MetalVideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA737311F1DBCFB00BC06EA /* MetalVideoService.swift */; };
 		5FC8662E1F1DA1D5005687A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8662D1F1DA1D5005687A5 /* AppDelegate.swift */; };
-		5FC866301F1DA1D5005687A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8662F1F1DA1D5005687A5 /* ViewController.swift */; };
+		5FC866301F1DA1D5005687A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8662F1F1DA1D5005687A5 /* MainViewController.swift */; };
 		5FC866331F1DA1D5005687A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC866311F1DA1D5005687A5 /* Main.storyboard */; };
 		5FC866351F1DA1D5005687A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC866341F1DA1D5005687A5 /* Assets.xcassets */; };
 		5FC866381F1DA1D5005687A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC866361F1DA1D5005687A5 /* LaunchScreen.storyboard */; };
+		5FC866441F1DAC55005687A5 /* DragonForcE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FC866431F1DAC55005687A5 /* DragonForcE.ttf */; };
+		5FC866461F1DAE7D005687A5 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC866451F1DAE7D005687A5 /* VideoViewController.swift */; };
+		5FC866481F1DB20C005687A5 /* MetalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC866471F1DB20C005687A5 /* MetalCell.swift */; };
+		5FC8664A1F1DB446005687A5 /* MetalVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC866491F1DB446005687A5 /* MetalVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FA737311F1DBCFB00BC06EA /* MetalVideoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalVideoService.swift; sourceTree = "<group>"; };
 		5FC8662A1F1DA1D5005687A5 /* MetalFestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalFestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8662D1F1DA1D5005687A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FC8662F1F1DA1D5005687A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FC8662F1F1DA1D5005687A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5FC866321F1DA1D5005687A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FC866341F1DA1D5005687A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FC866371F1DA1D5005687A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FC866391F1DA1D5005687A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC866431F1DAC55005687A5 /* DragonForcE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonForcE.ttf; sourceTree = "<group>"; };
+		5FC866451F1DAE7D005687A5 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		5FC866471F1DB20C005687A5 /* MetalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCell.swift; sourceTree = "<group>"; };
+		5FC866491F1DB446005687A5 /* MetalVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA737301F1DBC9A00BC06EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FA737311F1DBCFB00BC06EA /* MetalVideoService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		5FC866211F1DA1D5005687A5 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +72,51 @@
 		5FC8662C1F1DA1D5005687A5 /* MetalFestApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FC866421F1DAC21005687A5 /* Content */,
+				5FC8663F1F1DA314005687A5 /* Model */,
+				5FA737301F1DBC9A00BC06EA /* Service */,
+				5FC866411F1DA32B005687A5 /* View */,
+				5FC866401F1DA321005687A5 /* Controller */,
 				5FC8662D1F1DA1D5005687A5 /* AppDelegate.swift */,
-				5FC8662F1F1DA1D5005687A5 /* ViewController.swift */,
 				5FC866311F1DA1D5005687A5 /* Main.storyboard */,
 				5FC866341F1DA1D5005687A5 /* Assets.xcassets */,
 				5FC866361F1DA1D5005687A5 /* LaunchScreen.storyboard */,
 				5FC866391F1DA1D5005687A5 /* Info.plist */,
 			);
 			path = MetalFestApp;
+			sourceTree = "<group>";
+		};
+		5FC8663F1F1DA314005687A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FC866491F1DB446005687A5 /* MetalVideo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FC866401F1DA321005687A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8662F1F1DA1D5005687A5 /* MainViewController.swift */,
+				5FC866451F1DAE7D005687A5 /* VideoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FC866411F1DA32B005687A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FC866471F1DB20C005687A5 /* MetalCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FC866421F1DAC21005687A5 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				5FC866431F1DAC55005687A5 /* DragonForcE.ttf */,
+			);
+			name = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC866381F1DA1D5005687A5 /* LaunchScreen.storyboard in Resources */,
+				5FC866441F1DAC55005687A5 /* DragonForcE.ttf in Resources */,
 				5FC866351F1DA1D5005687A5 /* Assets.xcassets in Resources */,
 				5FC866331F1DA1D5005687A5 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC866301F1DA1D5005687A5 /* ViewController.swift in Sources */,
+				5FC866301F1DA1D5005687A5 /* MainViewController.swift in Sources */,
+				5FC8664A1F1DB446005687A5 /* MetalVideo.swift in Sources */,
+				5FC866481F1DB20C005687A5 /* MetalCell.swift in Sources */,
+				5FA737321F1DBCFB00BC06EA /* MetalVideoService.swift in Sources */,
 				5FC8662E1F1DA1D5005687A5 /* AppDelegate.swift in Sources */,
+				5FC866461F1DAE7D005687A5 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +361,7 @@
 				5FC8663E1F1DA1D5005687A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
